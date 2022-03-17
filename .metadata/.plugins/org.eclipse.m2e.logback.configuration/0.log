@@ -1138,3 +1138,279 @@ org.eclipse.core.runtime.CoreException: Launch configuration DemoApplication ref
 2022-03-14 19:34:48,057 [Worker-12: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2022-03-14 20:05:37,526 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2022-03-14 20:06:45,710 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-15 12:23:01,746 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-16 18:51:16,144 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-03-16 18:55:12,392 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-16 18:58:56,286 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 02:32:04,413 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 02:32:06,230 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-17 02:32:06,231 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/hyeminchoi/Desktop/FrameWork/mymaven/src/main/resources
+2022-03-17 02:32:06,232 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-17 02:32:06,250 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/hyeminchoi/Desktop/FrameWork/mymaven/src/test/resources
+2022-03-17 02:34:20,681 [Worker-21: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.mylyn.commons.notifications.ui_1.17.2.v20200813-0821.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:34:21,989 [Worker-19: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.mylyn.context_feature_3.25.2.v20200828-1617.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:34:22,619 [Worker-12: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.mylyn.discovery_3.25.2.v20200813-0821.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:34:24,620 [Worker-27: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.mylyn.monitor_3.25.2.v20200813-0821.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:34:26,013 [Worker-7: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.mylyn.tasks.search_3.25.2.v20200814-0512.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:34:29,812 [Worker-10: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.ws.service.policy_1.0.450.v201903050508.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:34:29,827 [Worker-27: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.wsdl_1.3.0.v201910301957.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:35:19,197 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 02:35:37,997 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 02:37:29,570 [Worker-5: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.j2ee.ejb.annotations.ui_1.2.0.v202101081429.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:37:30,308 [Worker-10: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.j2ee.infopop_1.0.300.v201903222024.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:37:30,776 [Worker-5: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.j2ee.navigator.ui_1.1.900.v202111210731.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:37:32,892 [Worker-4: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.jsp.ui_1.3.200.v202102222242.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:37:33,918 [Worker-21: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.server.ui.infopop_1.0.500.v201901310132.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:37:34,732 [Worker-0: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.servlet.ui.infopop_1.0.500.v201903222024.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:37:34,915 [Worker-3: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.standard.schemas_1.2.400.v202101070609.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:37:35,969 [Worker-21: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.ws.consumption_1.0.1500.v202111210735.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:37:36,314 [Worker-9: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.ws.creation.ejb.ui_1.0.300.v201910301957.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:37:37,909 [Worker-16: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.command.env.infopop_1.0.200.v201903050508.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:37:38,889 [Worker-21: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.html.core_1.4.100.v202112071542.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:38:12,015 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 02:39:59,639 [Worker-11: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.datatools.sqldevtools.feature_1.14.201.202107090755.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:00,600 [Worker-7: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.datatools.sqltools.routineeditor.ui_1.2.101.202008192017.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:01,466 [Worker-13: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/binary/org.eclipse.dltk.core_root_6.2.0.202005020530] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:01,580 [Worker-4: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.dltk.formatter_6.2.0.202005020530.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:02,183 [Worker-11: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.draw2d_3.10.100.201606061308.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:02,504 [Worker-9: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.emf_2.8.0.v20180706-1146.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:03,143 [Worker-5: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.emf.codegen.ecore.ui_2.29.0.v20220226-1304.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:03,325 [Worker-9: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.emf.codegen_2.23.0.v20210924-1718.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:05,854 [Worker-8: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.emf.transaction_1.9.1.201805140824.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:06,396 [Worker-8: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.graphiti.feature_0.18.0.202106091000.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:07,205 [Worker-9: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.jpt.common.feature_1.5.100.v201903221940.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:07,828 [Worker-5: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jpt.common.utility_2.4.1.v201902121834.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:13,279 [Worker-5: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.jsf.facesconfig_1.5.102.v201902121810.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:13,842 [Worker-9: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.jsf.standard.tagsupport_1.5.1.v201902121810.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:16,987 [Worker-7: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.ws.cxf.core_1.1.600.v202107101953.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:17,888 [Worker-8: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.ws.jaxws.core_1.0.600.v202104210249.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:18,019 [Worker-4: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.ws.jaxws.doc.user_1.0.400.v201902162216.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:18,565 [Worker-14: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.ws.jaxws.dom.ui_1.0.101.v201902162239.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:19,295 [Worker-11: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.persistence.antlr_3.5.2.v201711011707.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:29,815 [Worker-12: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.rap.tools.intro.source_3.20.0.20211214-1008.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:30,043 [Worker-4: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.rap.tools.launch.rwt_3.20.0.20211214-1008.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:30,395 [Worker-12: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.rap.tools.launch.source_3.20.0.20211214-1008.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:30,898 [Worker-7: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.rap.tools.templates.source_3.20.0.20211214-1008.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:31,018 [Worker-8: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.jsdt.chromium.debug.core_0.5.300.v201903222101.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:31,631 [Worker-11: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.jsdt.chromium.wip.eclipse_0.5.200.v201903222101.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:32,259 [Worker-13: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.jsdt.debug.core_3.2.201.v202108041556.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:33,156 [Worker-14: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.jsdt.doc_2.1.0.v202101250139.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:33,538 [Worker-5: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.xml.xpath.core_1.3.1.v201901071922.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 02:40:58,868 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 02:41:34,029 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 02:57:46,209 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 03:00:25,511 [Worker-17: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/javax.mail_1.4.0.v201005080615.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:00:50,027 [Worker-18: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.datatools.doc.user_1.14.102.201911250848.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:00:52,846 [Worker-19: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.datatools.modelbase.sql.edit_1.2.101.201811012051.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:00:57,454 [Worker-19: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.datatools.sqltools.db.derby.ui_1.2.101.201811012051.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:02,341 [Worker-14: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.dltk.core_6.2.0.202005020530.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:05,638 [Worker-13: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.emf.common.ui_2.19.0.v20220226-1304.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:10,043 [Worker-9: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.gef_3.11.0.201606061308.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:16,037 [Worker-15: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.jpt.jaxb.feature_1.5.201.v202104080213.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:22,847 [Worker-20: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.j2ee.doc.user_1.1.400.v202101072335.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:23,434 [Worker-17: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.j2ee.ejb.annotations.ui_1.2.0.v202101081429.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:26,976 [Worker-14: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.jsf.facelet.core_1.4.2.v201902121810.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:30,404 [Worker-14: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.pagedesigner_1.8.5.v202111210733.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:32,923 [Worker-21: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.server.ui.infopop_1.0.500.v201901310132.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:33,577 [Worker-14: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.jst.server_userdoc.feature_3.3.300.v201901310132.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:34,218 [Worker-18: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.jst.web_ui.feature_3.25.0.v202201160257.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:36,970 [Worker-13: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.ws.consumption.infopop_1.0.400.v201903050508.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:37,084 [Worker-9: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.ws.consumption.ui_1.1.1100.v202111210735.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:40,999 [Worker-17: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.ws.jaxws.ui_1.0.600.v202008101342.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:41,444 [Worker-20: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.jst.ws.ui_1.1.1.v202103201626.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:42,436 [Worker-13: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.m2e.wtp.jsf_1.4.4.20201128-1705.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:01:59,742 [Worker-22: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.doc.user_1.2.0.v201903222120.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:02:13,936 [Worker-14: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.wst.ws_core.feature_3.25.0.v202202161833.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:02:14,756 [Worker-21: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.wsi_1.1.300.v202101270311.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:02:18,135 [Worker-14: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.wst.xsl.core_1.2.100.v201907231732.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:02:20,367 [Worker-19: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.zest.core_1.5.300.201606061308.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:02:20,637 [Worker-20: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.jdom_1.1.1.v201101151400.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:06:17,605 [Worker-23: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.mylyn.context.core_3.25.2.v20200828-1617.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:06:21,128 [Worker-47: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.mylyn.java_feature_3.25.2.v20200828-1617.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:06:22,744 [Worker-42: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.mylyn.monitor.ui_3.25.2.v20200813-0821.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:06:23,546 [Worker-42: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.mylyn.tasks.index.ui_3.25.2.v20200814-0512.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:06:24,264 [Worker-42: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.mylyn.team.ui_3.25.2.v20200828-1617.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:06:44,167 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 03:07:59,487 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 03:09:45,445 [Worker-31: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.apache.axis_1.4.0.v201411182030.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:09:53,554 [Worker-5: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.mylyn.commons.notifications.core_1.17.2.v20200813-0821.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:09:57,136 [Worker-19: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.mylyn.debug.ui_3.25.2.v20200828-1617.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:09:57,849 [Worker-7: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.mylyn.discovery_3.25.2.v20200813-0821.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:09:58,323 [Worker-3: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/plugins/org.eclipse.mylyn.help.ui_3.25.2.v20200814-0512.jar.pack.gz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:10:00,878 [Worker-22: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-03/202203161000/features/org.eclipse.mylyn.java_feature_3.25.2.v20200828-1617.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://ftp.jaist.ac.jp:443
+2022-03-17 03:10:36,156 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 13:35:21,423 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-03-17 13:38:36,843 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2022-03-17 13:38:37,406 [Worker-4: Launching di-xml] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/hyeminchoi/Desktop/FrameWork/di-xml
+2022-03-17 13:38:37,408 [Worker-4: Launching di-xml] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B jar:jar -Dstyle.color=always
+2022-03-17 13:42:38,640 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-17 13:42:38,640 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/hyeminchoi/Desktop/FrameWork/mymaven/src/main/resources
+2022-03-17 13:42:38,641 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-03-17 13:42:38,641 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/hyeminchoi/Desktop/FrameWork/mymaven/src/test/resources
+2022-03-17 14:28:23,548 [Worker-31: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SimpleSSLSocketServer references closed project di-xml
+org.eclipse.core.runtime.CoreException: Launch configuration SimpleSSLSocketServer references closed project di-xml
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1733)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:523)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:401)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-03-17 14:28:23,550 [Worker-31: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SimpleSSLSocketServer references closed project di-xml
+org.eclipse.core.runtime.CoreException: Launch configuration SimpleSSLSocketServer references closed project di-xml
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1733)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:523)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:402)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-03-17 14:28:23,553 [Worker-31: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SimpleSSLSocketServer references closed project di-xml
+org.eclipse.core.runtime.CoreException: Launch configuration SimpleSSLSocketServer references closed project di-xml
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1733)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2128)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:376)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:403)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-03-17 14:28:23,554 [Worker-31: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration MemberSampleMain references closed project di-xml
+org.eclipse.core.runtime.CoreException: Launch configuration MemberSampleMain references closed project di-xml
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1733)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:523)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:401)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-03-17 14:28:23,554 [Worker-31: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration MemberSampleMain references closed project di-xml
+org.eclipse.core.runtime.CoreException: Launch configuration MemberSampleMain references closed project di-xml
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1733)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:523)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:402)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-03-17 14:28:23,556 [Worker-31: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration MemberSampleMain references closed project di-xml
+org.eclipse.core.runtime.CoreException: Launch configuration MemberSampleMain references closed project di-xml
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1733)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2128)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:376)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:403)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-03-17 14:28:25,539 [Worker-29: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.tukorea:di-xml:0.0.1-SNAPSHOT @ /Users/hyeminchoi/Desktop/FrameWork/di-xml/pom.xml.
+2022-03-17 14:28:25,539 [Worker-31: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.tukorea:di-xml:0.0.1-SNAPSHOT @ /Users/hyeminchoi/Desktop/FrameWork/di-xml/pom.xml.
+2022-03-17 14:28:25,697 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-17 14:28:25,699 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-17 14:28:25,703 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-17 14:28:25,703 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-17 14:28:26,852 [Worker-24: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.tukorea:di-xml:0.0.1-SNAPSHOT @ /Users/hyeminchoi/Desktop/FrameWork/di-xml/pom.xml.
+2022-03-17 14:28:27,086 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-17 14:28:27,087 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-17 14:28:27,088 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-17 14:28:27,088 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-17 14:29:46,485 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-17 14:29:46,488 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-17 14:29:46,491 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-17 14:29:46,491 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-17 14:29:49,526 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-17 14:29:49,528 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-17 14:29:49,529 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-17 14:29:49,530 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-03-17 14:30:10,260 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-17 14:30:10,261 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-03-17 14:30:10,261 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-17 14:30:10,261 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
