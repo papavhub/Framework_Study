@@ -11,16 +11,16 @@
 </bean>
 
 <!-- Constructor based Injection -->
-<bean id="memberService" class="org.tukorea.di.service.MemberServiceImpl">
+<!-- <bean id="memberService" class="org.tukorea.di.service.MemberServiceImpl">
 	<constructor-arg ref="memberDAO"/>
-</bean>
+</bean> -->
 
 <!--  Setter based Injection -->
-<!-- 
+
 <bean id="memberService" class="org.tukorea.di.service.MemberServiceImpl">
 	<property name="memberDAO" ref="memberDAO"/>
 </bean>
- -->
+
 
 
 </beans>

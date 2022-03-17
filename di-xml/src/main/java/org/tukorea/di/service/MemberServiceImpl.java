@@ -7,7 +7,15 @@ import org.tukorea.di.persistence.MemberDAO;
 public class MemberServiceImpl implements MemberService {
 	private MemberDAO memberDAO;
 	
-	public MemberServiceImpl(MemberDAO memberDAO) {
+	
+//	Constructor based Injection
+//	public MemberServiceImpl(MemberDAO memberDAO) {
+//		this.memberDAO = memberDAO;
+//	}
+	
+	
+//	Setter based Injection
+	public void setMemberDAO(MemberDAO memberDAO) {
 		this.memberDAO = memberDAO;
 	}
 	
