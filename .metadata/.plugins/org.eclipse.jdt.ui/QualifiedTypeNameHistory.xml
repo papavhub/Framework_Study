@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.tukorea.di.persistence.MemberDAO"/>
+    <fullyQualifiedTypeName name="org.tukorea.di.domain.StudentVO"/>
+    <fullyQualifiedTypeName name="org.tukorea.di.service.MemberService"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+</qualifiedTypeNameHistroy>
