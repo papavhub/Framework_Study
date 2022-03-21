@@ -4,7 +4,9 @@ import org.tukorea.di.domain.MemberVO;
 import org.tukorea.di.persistence.MemberDAO;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MemberServiceImpl implements MemberService {
 	
 	@Autowired

@@ -3,7 +3,9 @@ package org.tukorea.di.persistence;
 import java.util.HashMap;
 import java.util.Map;
 import org.tukorea.di.domain.MemberVO;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MemberDAOImpl implements MemberDAO {
 		private Map<String, MemberVO> storage = new HashMap<String, MemberVO>();
 		
