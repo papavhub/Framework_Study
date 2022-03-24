@@ -4,4 +4,7 @@
     <fullyQualifiedTypeName name="org.tukorea.di.domain.StudentVO"/>
     <fullyQualifiedTypeName name="org.tukorea.di.service.MemberService"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 </qualifiedTypeNameHistroy>
