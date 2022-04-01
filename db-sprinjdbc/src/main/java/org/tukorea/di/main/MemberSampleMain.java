@@ -15,7 +15,6 @@ public class MemberSampleMain {
 	private static ApplicationContext ctx = null;
 	
 	public static void main(String[] args) throws Exception {
-		System.out.println("Hello DI-XML");
 		
 		ctx = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
 		MemberService memberService = ctx.getBean(MemberService.class);
