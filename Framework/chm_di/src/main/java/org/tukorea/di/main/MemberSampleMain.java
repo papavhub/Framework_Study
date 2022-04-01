@@ -106,6 +106,10 @@ public class MemberSampleMain {
 					System.out.println("5. 개인 학생 정보 삭제");
 					System.out.println("------------------");
 					
+					System.out.print("Student_id >> ");
+					String deleteID = scan.next();
+					memberService.deleteMember(deleteID);
+					
 					break;
 				case 6:
 					System.out.println("6. 프로그램 종료");

@@ -53,4 +53,9 @@ public class MemberDAOImpl implements MemberDAO {
 				);
 			return studentlist;
 		}
+
+		public void delete(String id) throws Exception {
+			jdbcTemplate.update("DELETE FROM STUDENT WHERE ID=?", id);
+			
+		}
 }

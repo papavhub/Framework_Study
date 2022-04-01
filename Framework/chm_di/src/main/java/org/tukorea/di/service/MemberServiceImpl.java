@@ -29,4 +29,8 @@ public class MemberServiceImpl implements MemberService {
 	public List<StudentVO> readMemberList() throws Exception {
 		return memberDAO.readList();
 	}
+
+	public void deleteMember(String id) throws Exception {
+		memberDAO.delete(id);
+	}
 }
