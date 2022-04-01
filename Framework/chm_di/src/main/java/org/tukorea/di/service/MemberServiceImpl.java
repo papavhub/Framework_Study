@@ -33,4 +33,8 @@ public class MemberServiceImpl implements MemberService {
 	public void deleteMember(String id) throws Exception {
 		memberDAO.delete(id);
 	}
+
+	public StudentVO updateMember(StudentVO student) throws Exception {
+		return memberDAO.update(student);
+	}
 }

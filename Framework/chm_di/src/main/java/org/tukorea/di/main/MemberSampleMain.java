@@ -101,6 +101,38 @@ public class MemberSampleMain {
 					System.out.println("4. 개인 학생 정보 수정");
 					System.out.println("------------------");
 					
+					StudentVO vos = new StudentVO();
+					System.out.print("Student_id >> ");
+					String Student_ids = scan.next();
+					vos.setId(Student_ids);
+					
+					System.out.print("Student_passwd >> ");
+					String Student_passwds = scan.next();
+					vos.setPasswd(Student_passwds);
+					
+					System.out.print("Student_userName >> ");
+					String Student_userNames = scan.next();
+					vos.setUsername(Student_userNames);
+					
+					System.out.print("Student_snum >> ");
+					String Student_snums = scan.next();
+					vos.setSnum(Student_snums);
+					
+					System.out.print("Student_depart >> ");
+					String Student_departs = scan.next();
+					vos.setDepart(Student_departs);
+					
+					System.out.print("Student_mobile >> ");
+					String Student_mobiles = scan.next();
+					vos.setMobile(Student_mobiles);
+					
+					System.out.print("Student_email >> ");
+					String Student_emails = scan.next();
+					vos.setEmail(Student_emails);
+					
+					memberService.updateMember(vos);
+					System.out.println(vos);
+					
 					break;
 				case 5:
 					System.out.println("5. 개인 학생 정보 삭제");
@@ -122,34 +154,6 @@ public class MemberSampleMain {
 				continue;
 			}
 		}
-		
-//		System.out.println("Hello DI-XML");
-//		
-//		ctx = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-//		MemberService memberService = ctx.getBean(MemberService.class);
-//		
-//		String strID = "hansol";
-//		StudentVO vo = new StudentVO();
-//		vo.setId(strID);
-//		vo.setPasswd(strID);
-//		vo.setUsername(strID);
-//		vo.setSnum(strID);
-//		
-//		try {
-//			StudentVO member = memberService.readMember(strID);
-//			System.out.println(member);
-//			
-//			List<StudentVO> list = memberService.readMemberList();
-//			for(StudentVO svo : list) {
-//				System.out.println(vo);
-//			}
-//		}catch(DataAccessException e) {
-//			System.out.println(e);
-//		}finally {
-//			JdbcTemplate jdbcTemplate = ctx.getBean(JdbcTemplate.class);
-//			int count = jdbcTemplate.queryForObject("SELECT COUNT(*) FROM STUDENT", Integer.class);
-//			System.out.println(count);
-//		}
 		
 	}
 }

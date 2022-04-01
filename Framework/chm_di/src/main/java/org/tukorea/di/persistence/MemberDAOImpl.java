@@ -58,4 +58,9 @@ public class MemberDAOImpl implements MemberDAO {
 			jdbcTemplate.update("DELETE FROM STUDENT WHERE ID=?", id);
 			
 		}
+
+		public StudentVO update(StudentVO student) throws Exception {
+			jdbcTemplate.update("UPDATE STUDENT SET passwd=?, username=?, snum=?, depart=?, mobile=?, email=? WHERE ID=?", student.getPasswd(), student.getUsername(), student.getSnum(), student.getDepart(), student.getMobile(), student.getEmail(), student.getId());
+			return student;
+		}
 }

@@ -9,6 +9,7 @@ public interface MemberService {
 	public StudentVO readMember(String id) throws Exception;
 	public void addMember(StudentVO student) throws Exception;
 	public void deleteMember(String id) throws Exception;
+	public StudentVO updateMember(StudentVO student) throws Exception;
 	
 	public List<StudentVO> readMemberList() throws Exception;
 }
