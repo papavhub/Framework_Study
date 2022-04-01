@@ -36,10 +36,10 @@ public class MemberSampleMain {
 			try {
 				int sel = scan.nextInt();
 				scan.nextLine();
+				System.out.println("------------------");
 				
 				switch(sel) {
 				case 1:
-					System.out.println("------------------");
 					System.out.println("1. 전체 학생 정보 출력");
 					System.out.println("------------------");
 					
@@ -50,7 +50,6 @@ public class MemberSampleMain {
 					break;
 					
 				case 2:
-					System.out.println("------------------");
 					System.out.println("2. 개인 학생 정보 출력");
 					System.out.println("------------------");
 					
@@ -62,25 +61,53 @@ public class MemberSampleMain {
 					break;
 					
 				case 3:
-					System.out.println("------------------");
 					System.out.println("3. 개인 학생 정보 생성");
 					System.out.println("------------------");
 					
+					StudentVO vo = new StudentVO();
+					System.out.print("Student_id >> ");
+					String Student_id = scan.next();
+					vo.setId(Student_id);
+					
+					System.out.print("Student_passwd >> ");
+					String Student_passwd = scan.next();
+					vo.setPasswd(Student_passwd);
+					
+					System.out.print("Student_userName >> ");
+					String Student_userName = scan.next();
+					vo.setUsername(Student_userName);
+					
+					System.out.print("Student_snum >> ");
+					String Student_snum = scan.next();
+					vo.setSnum(Student_snum);
+					
+					System.out.print("Student_depart >> ");
+					String Student_depart = scan.next();
+					vo.setDepart(Student_depart);
+					
+					System.out.print("Student_mobile >> ");
+					String Student_mobile = scan.next();
+					vo.setMobile(Student_mobile);
+					
+					System.out.print("Student_email >> ");
+					String Student_email = scan.next();
+					vo.setEmail(Student_email);
+					
+					memberService.addMember(vo);
+					
 					break;
+					
 				case 4:
-					System.out.println("------------------");
 					System.out.println("4. 개인 학생 정보 수정");
 					System.out.println("------------------");
 					
 					break;
 				case 5:
-					System.out.println("------------------");
 					System.out.println("5. 개인 학생 정보 삭제");
 					System.out.println("------------------");
 					
 					break;
 				case 6:
-					System.out.println("------------------");
 					System.out.println("6. 프로그램 종료");
 					System.out.println("------------------");
 					System.exit(0);
