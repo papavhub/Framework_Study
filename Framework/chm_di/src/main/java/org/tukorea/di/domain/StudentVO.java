@@ -12,7 +12,7 @@ public class StudentVO {
 	
 	@Override
 	public String toString() {
-		return "StudentVO [id=" + id + ", passwd=" + passwd + ", username=" + username + ", snum=" + snum + ", depart=" + depart + ", mobile=" + mobile + ", email=" + email + "]";
+		return "id : " + id + System.lineSeparator() + "passwd : " + passwd + System.lineSeparator() + "username : " + username + System.lineSeparator() + "snum : " + snum + System.lineSeparator() + "depart : " + depart + System.lineSeparator() + "mobile : " + mobile + System.lineSeparator() + "email : " + email + System.lineSeparator() + "------------------";
 	}
 	
 	

@@ -19,7 +19,12 @@ public class MemberSampleMain {
 	public static void main(String[] args) throws Exception {
 		System.out.println("안녕하세요 DI_SPRINGJDBC");
 		
+		ctx = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+		MemberService memberService = ctx.getBean(MemberService.class);
+		Scanner scan = new Scanner(System.in); // Scanner 객체
+		
 		while(true) {
+			System.out.println("------------------");
 			System.out.println("1. 전체 학생 정보 출력");
 			System.out.println("2. 개인 학생 정보 출력");
 			System.out.println("3. 개인 학생 정보 생성");
@@ -29,28 +34,55 @@ public class MemberSampleMain {
 			System.out.print("Select >> ");
 			
 			try {
-				Scanner scan = new Scanner(System.in); // Scanner 객체
 				int sel = scan.nextInt();
 				scan.nextLine();
 				
 				switch(sel) {
 				case 1:
+					System.out.println("------------------");
 					System.out.println("1. 전체 학생 정보 출력");
+					System.out.println("------------------");
+					
+					List<StudentVO> list = memberService.readMemberList();
+					for(StudentVO svo : list) {
+						System.out.println(svo);
+					}			
 					break;
+					
 				case 2:
+					System.out.println("------------------");
 					System.out.println("2. 개인 학생 정보 출력");
+					System.out.println("------------------");
+					
+					System.out.print("Student_id >> ");
+					String strID = scan.next();
+					StudentVO member = memberService.readMember(strID);
+					System.out.println(member);
+					
 					break;
+					
 				case 3:
+					System.out.println("------------------");
 					System.out.println("3. 개인 학생 정보 생성");
+					System.out.println("------------------");
+					
 					break;
 				case 4:
+					System.out.println("------------------");
 					System.out.println("4. 개인 학생 정보 수정");
+					System.out.println("------------------");
+					
 					break;
 				case 5:
+					System.out.println("------------------");
 					System.out.println("5. 개인 학생 정보 삭제");
+					System.out.println("------------------");
+					
 					break;
 				case 6:
+					System.out.println("------------------");
 					System.out.println("6. 프로그램 종료");
+					System.out.println("------------------");
 					System.exit(0);
 				}
 			}
