@@ -1,3 +1,5 @@
 INDEX VERSION 1.131
 /Users/hyeminchoi/Desktop/Framework/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2687294693.index
 /mvc-simple/src/main/java
+/Users/hyeminchoi/Desktop/Framework_Study/Framework/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2687294693.index
+/mvc-simple/src/main/java

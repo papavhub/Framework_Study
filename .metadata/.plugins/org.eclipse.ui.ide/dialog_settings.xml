@@ -73,6 +73,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/hyeminchoi/Desktop/Framework_Study/db-sprinjdbc"/>
 			<item value="/Users/hyeminchoi/Desktop/Framework_Study/di-xml"/>
 			<item value="/Users/hyeminchoi/Desktop/Framework_Study/mymaven"/>
 			<item value="/Users/hyeminchoi/Desktop/Framework_Study/di-annotation"/>
