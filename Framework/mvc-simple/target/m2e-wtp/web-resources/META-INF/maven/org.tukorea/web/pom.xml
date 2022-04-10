@@ -8,19 +8,17 @@
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
-		<java-version>1.6</java-version>
+		<java-version>1.11</java-version>
 		<org.springframework-version>5.2.19.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.7.35</org.slf4j-version>
 	</properties>
 	<dependencies>
-	
-	
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>5.2.19.RELEASE</version>
+			<version>${org.springframework-version}</version>
 			<exclusions>
 				<!-- Exclude Commons Logging in favor of SLF4j -->
 				<exclusion>
@@ -29,13 +27,47 @@
 				 </exclusion>
 			</exclusions>
 		</dependency>
-		
-		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+
+		<!-- javax/validation/ValidatorFactory  -->
+		<dependency>
+		       <groupId>org.hibernate</groupId>
+		       <artifactId>hibernate-validator</artifactId>
+		       <version>6.2.2.Final</version>
+		 </dependency>
+		 
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok-maven-plugin</artifactId>
+		    <version>1.18.20.0</version>
+		    <scope>provided</scope>
+		</dependency>
+			    
+		<!-- jackson-databind -->
+		<dependency>
+		      <groupId>com.fasterxml.jackson.core</groupId>
+		      <artifactId>jackson-databind</artifactId>
+		      <version>2.12.6</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml-->
+		<dependency>
+		  <groupId>com.fasterxml.jackson.dataformat</groupId>
+		  <artifactId>jackson-dataformat-xml</artifactId>
+		  <version>2.11.4</version>
+		</dependency>
+
+		<!-- @PreDestroy, @PostConstruct - jdk 9 이상일 경우-->	
+		<dependency>
+		    <groupId>javax.annotation</groupId>
+		    <artifactId>javax.annotation-api</artifactId>
+		    <version>1.3.2</version>
+		</dependency>		
 				
 		<!-- AspectJ -->
 		<dependency>
@@ -85,20 +117,6 @@
 				</exclusion>
 			</exclusions>
 			<scope>runtime</scope>
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
-		<dependency>
-		    <groupId>org.hibernate.validator</groupId>
-		    <artifactId>hibernate-validator</artifactId>
-		    <version>6.2.2.Final</version>
-		</dependency>
-
-		
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.12.6</version>
 		</dependency>
 
 		<!-- @Inject -->

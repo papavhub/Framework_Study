@@ -19,7 +19,7 @@ public class MemberTest {
 	
 	@Test
 	public void testAddMember() throws Exception {
-		String strID = "hansol3";
+		String strID = "hansol7";
 		StudentVO vo = new StudentVO();
 		vo.setId(strID);
 		vo.setPasswd(strID);
@@ -37,15 +37,15 @@ public class MemberTest {
 	
 	@Test
 	public void testUpdateMember() throws Exception {
-		String strID = "hansol2";
+		String strID = "hansol6";
 		StudentVO vo = new StudentVO();
-		vo.setId(strID);
-		vo.setPasswd(strID);
-		vo.setUsername(strID);
-		vo.setSnum(strID);
-		vo.setDepart(strID);
-		vo.setMobile(strID);
-		vo.setEmail(strID);
+		vo.setId("hansol6");
+		vo.setPasswd("passwd");
+		vo.setUsername("username");
+		vo.setSnum("snum");
+		vo.setDepart("depart");
+		vo.setMobile("mobile");
+		vo.setEmail("email");
 		
 		memberService.updateMember(vo);
 		
