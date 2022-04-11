@@ -3780,3 +3780,82 @@ org.xml.sax.SAXParseException; lineNumber: 4732; columnNumber: 15; 예기치 않
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 01:14:27.205
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2022-04-11 13:41:01.224 -----------------------------------------------
+eclipse.buildId=3.9.12.202003181024-RELEASE-e415
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/hyeminchoi/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/hyeminchoi/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2022-04-11 13:41:16.091
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2022-04-11 13:41:17.363
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-11 13:41:17.363
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@63661fc7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@65130cf2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:41:32.178
+!MESSAGE The artifact org.hibernate:hibernate-validator:jar:6.2.2.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.2.Final
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:41:32.181
+!MESSAGE The artifact org.slf4j:slf4j-log4j12:jar:1.7.35 has been relocated to org.slf4j:slf4j-reload4j:jar:1.7.35
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:41:32.908
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:41:32.925
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:46:29.474
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:46:29.523
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:46:34.483
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:46:34.492
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:47:08.039
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:47:08.043
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:47:09.089
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:47:09.091
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:47:17.083
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:47:17.087
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:47:24.726
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-11 13:47:24.735
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
