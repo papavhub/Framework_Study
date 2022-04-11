@@ -28,7 +28,8 @@
 				<th>SNUM</th>	
 				<th>DEPART</th>	
 				<th>MOBILE</th>	
-				<th>EMAIL</th>					
+				<th>EMAIL</th>	
+				<th>Setting</th>				
 				</tr>
 			
 				<c:forEach var="member" items="${students}">
