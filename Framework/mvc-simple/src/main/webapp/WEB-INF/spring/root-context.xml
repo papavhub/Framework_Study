@@ -11,5 +11,6 @@
 	</bean>
 		
 	<context:component-scan base-package="org.tukorea.web.service" />
+	<context:component-scan base-package="org.tukorea.exception"/>
 		
 </beans>

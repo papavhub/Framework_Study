@@ -5,18 +5,23 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.tukorea.web.domain.StudentVO;
+import org.tukorea.web.exception.DataNotFoundException;
 import org.tukorea.web.service.MemberService;
 
 
 @Controller
+@ControllerAdvice
 @RequestMapping(value="/member")
 public class MemberController {
 	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
@@ -71,10 +76,11 @@ public class MemberController {
 		return "redirect:/member/list";
 	}
 	
-	
-	
-	
-	
+	@ExceptionHandler(DataNotFoundException.class)
+	public String handleException(DataNotFoundException e) {
+		e.printStackTrace();
+		return "member/not_found";
+	}
 	
 	
 }
