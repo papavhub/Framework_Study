@@ -1,4 +1,4 @@
-package org.tukorea.controller;
+package org.tukorea.myweb.controller;
 
 import java.text.DateFormat;
 import java.util.Date;

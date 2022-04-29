@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -43,5 +44,27 @@ public class MemberController {
 		return "member/member_register";
 	}
 	
-//	@RequestMapping(value= {})
+	@RequestMapping(value= {"/register"}, method=RequestMethod.POST)
+	public String createMemberPost(@ModelAttribute("student") StudentVO vo) throws Exception {
+		memberService.addMember(vo);
+		logger.info(vo.toString());
+		logger.info("/register URL POST method called. then createMember method executed.");
+		return "redirect:/member/list";
+	}
+	
+	@RequestMapping(value="/modify", method=RequestMethod.GET)
+	public String modifyMemberGet(@RequestParam("id") String id, Model model)  throws Exception {
+		StudentVO student = memberService.readMember(id);
+		logger.info("/modify?id=kang URL GET method called. then forward member_modify.jsp");
+		model.addAttribute("student", student);
+		return "member/member_modifiy";
+	}
+	
+	@RequestMapping(value="/modify", method=RequestMethod.POST)
+	public String modifyMemberPost(@ModelAttribute("student") StudentVO vo) throws Exception {
+		memberService.updateMember(vo);
+		logger.info(vo.toString());
+		logger.info("/modify?id=kang URL POST method called. then modifyMemberPost executed.");
+		return "redirect:/member/list";
+	}
 }

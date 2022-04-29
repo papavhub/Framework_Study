@@ -34,7 +34,7 @@
    </bean>
    
    <context:component-scan base-package="org.tukorea.myweb.persistence"/>
-   <context:component-scan base-package="org.tukorea.myweb.service" />
+   <context:component-scan base-package="org.tukorea.myweb.service"/>
 		
 </beans>
 
