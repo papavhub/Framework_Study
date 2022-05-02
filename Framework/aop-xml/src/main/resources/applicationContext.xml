@@ -21,7 +21,7 @@
 	</bean>
 	
 	<aop:config>
-		<aop:aspect id="testAsepct" ref="memberAspect">
+		<aop:aspect id="testAspect" ref="memberAspect">
 			<aop:pointcut id="readMethod" expression="execution(* read(String))"/>
 			<aop:before pointcut-ref="readMethod" method="beforeMethod"/>
 			<aop:after pointcut-ref="readMethod" method="afterMethod"/>
