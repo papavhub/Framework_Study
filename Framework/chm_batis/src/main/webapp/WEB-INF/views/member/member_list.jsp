@@ -45,6 +45,7 @@
 						<td>
 							<c:url value="/member/read?id=${member.id}" var="url"/><a href="${url}">정보 보기</a>
 							<c:url value="/member/modify?id=${member.id}" var="url"/><a href="${url}">정보 수정</a>
+							<c:url value="/member/delete?id=${member.id}" var="url"/><a href="${url}">정보 삭제</a>
 						</td>
 					</tr>
 				</c:forEach>

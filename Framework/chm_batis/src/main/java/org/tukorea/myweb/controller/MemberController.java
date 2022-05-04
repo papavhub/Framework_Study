@@ -22,6 +22,7 @@ public class MemberController {
 	@Autowired(required=true)
 	private MemberService memberService;
 	
+	// list
 	@RequestMapping(value= {"/list"}, method=RequestMethod.GET)
 	public String listMember(Model model) throws Exception {
 		List<StudentVO> students = memberService.readMemberList();
@@ -30,6 +31,7 @@ public class MemberController {
 		return "member/member_list";
 	}
 	
+	// read
 	@RequestMapping(value="/read", method=RequestMethod.GET)
 	public String readMember(@RequestParam("id") String id, Model model) throws Exception {
 		StudentVO student = memberService.readMember(id);
@@ -38,6 +40,7 @@ public class MemberController {
 		return "member/member_read";
 	}
 	
+	// register
 	@RequestMapping(value= {"/register"}, method=RequestMethod.GET)
 	public String createMemberGet() throws Exception {
 		logger.info("/register URL GET method called. then forward member_register.jsp");
@@ -52,12 +55,21 @@ public class MemberController {
 		return "redirect:/member/list";
 	}
 	
+	// delete
+	@RequestMapping(value="/delete", method=RequestMethod.GET)
+	public String deleteMember(@RequestParam("id") String id, Model model) throws Exception {
+		memberService.deleteMember(id);
+		logger.info("/delete?id=kang URL called. then readMember method executed");
+		return "redirect:/member/list";
+	}
+	
+	// modify
 	@RequestMapping(value="/modify", method=RequestMethod.GET)
 	public String modifyMemberGet(@RequestParam("id") String id, Model model)  throws Exception {
 		StudentVO student = memberService.readMember(id);
 		logger.info("/modify?id=kang URL GET method called. then forward member_modify.jsp");
 		model.addAttribute("student", student);
-		return "member/member_modifiy";
+		return "member/member_modify";
 	}
 	
 	@RequestMapping(value="/modify", method=RequestMethod.POST)

@@ -14,7 +14,7 @@
 		<div align=center>
 		
 			<header>학생 정보 등록</header>
-			<form name=form1 action="http://localhost:8080/web/member/register/" method="post">
+			<form name=form1 action="http://localhost:8080/myweb/member/register/" method="post">
 				<table>
 					<tr><th>LoginID</th><td><input type="text" name="id" autofocus placeholder="공백 없이 입력하세요"></td></tr>
 					<tr><th>LoginPWD</th><td><input type="text" name="passwd" autofocus placeholder="공백 없이 입력하세요"></td></tr>

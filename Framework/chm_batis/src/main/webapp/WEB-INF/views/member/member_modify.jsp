@@ -14,7 +14,7 @@
 		<div align=center>
 		
 			<header>학생 정보 수정</header>
-			<form name=form1 action="http://localhost:8080/web/member/modify/" method="post">
+			<form name=form1 action="http://localhost:8080/myweb/member/modify/" method="post">
 				<table>
 					<tr><th>LoginID</th><td><input type="text" name="id" autofocus placeholder="${student.id}"></td></tr>
 					<tr><th>LoginPWD</th><td><input type="text" name="passwd" autofocus placeholder="${student.passwd}"></td></tr>
