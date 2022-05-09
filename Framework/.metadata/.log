@@ -3245,3 +3245,9 @@ java.lang.IllegalStateException: Returning argument name 'member' was not bound 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-09 13:54:03.047
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-09 13:55:32.111
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-09 13:55:32.121
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

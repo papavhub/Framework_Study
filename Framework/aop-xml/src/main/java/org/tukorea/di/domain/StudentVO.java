@@ -53,6 +53,6 @@ public class StudentVO {
 	
 	@Override
 	public String toString() {
-		return "StudentVO [id=" + id + ", passwd=" + passwd + ", username=" + username + ", snum" + snum + ", depart=" + depart + ", mobile=" + mobile + ", email=" + email + "]";
+		return "StudentVO [id=" + id + ", passwd=" + passwd + ", username=" + username + ", snum=" + snum + ", depart=" + depart + ", mobile=" + mobile + ", email=" + email + "]";
 	}
 }
