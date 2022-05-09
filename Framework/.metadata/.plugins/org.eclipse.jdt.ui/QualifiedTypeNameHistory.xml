@@ -33,7 +33,6 @@
     <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="org.tukorea.myweb.persistence.MemberDAO"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
-    <fullyQualifiedTypeName name="org.tukorea.myweb.service.MemberService"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
@@ -42,7 +41,6 @@
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="org.tukorea.myweb.domain.StudentVO"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
@@ -55,4 +53,6 @@
     <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.classfile.Signature"/>
     <fullyQualifiedTypeName name="org.tukorea.di.domain.StudentVO"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
+    <fullyQualifiedTypeName name="org.tukorea.myweb.service.MemberService"/>
+    <fullyQualifiedTypeName name="org.tukorea.myweb.domain.StudentVO"/>
 </qualifiedTypeNameHistroy>

@@ -9,8 +9,8 @@
 
 
 
-
-	<bean id="memberDAO" class="org.tukorea.di.persistence.MemberDAOImpl">
+<!-- xml -->
+<!-- 	<bean id="memberDAO" class="org.tukorea.di.persistence.MemberDAOImpl">
 	</bean>
 	
 	<bean id="memberService" class="org.tukorea.di.service.MemberServiceImpl">
@@ -29,7 +29,18 @@
 			<aop:around pointcut-ref="readMethod" method="aroundMethod"/>
 			<aop:after-throwing pointcut-ref="readMethod" method="afterThrowingMethod" throwing="ex"/>
 		</aop:aspect>
-	</aop:config>
+	</aop:config> -->
+	
+	
+	
+<!-- Annotation -->
+	<context:component-scan base-package="org.tukorea.di.persistence"></context:component-scan>
+	<context:component-scan base-package="org.tukorea.di.service"></context:component-scan>
+	<context:component-scan base-package="org.tukorea.aop"></context:component-scan>
+	
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	
+	
 
 
 
