@@ -14,7 +14,7 @@ public class MemberDAOImpl implements MemberDAO {
 	@Autowired
 	private SqlSession sqlSession;
 	
-	private static final String namespace = "org.tukorea.myweb.mapper.StudentMapper";
+	private static final String namespace = "org.tukorea.tran.mapper.StudentMapper";
 
 	@Override
 	public void add(StudentVO vo) throws Exception {
