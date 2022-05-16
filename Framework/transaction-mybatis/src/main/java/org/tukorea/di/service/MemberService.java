@@ -10,4 +10,5 @@ public interface MemberService {
 	public void addMember(StudentVO student) throws Exception;
 	public void deleteMember(String id) throws Exception;
 	public void updateMember(StudentVO student) throws Exception;
+	void updateMemberList(StudentVO student1, StudentVO student2) throws Exception;
 }

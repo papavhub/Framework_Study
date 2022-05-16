@@ -36,5 +36,11 @@ public class MemberServiceImpl implements MemberService {
 		memberDAO.update(student);
 	}
 	
+	@Override
+	public void updateMemberList(StudentVO student1, StudentVO student2) throws Exception {
+		memberDAO.update(student2);
+		memberDAO.update(student1);
+	}
+	
 	
 }
