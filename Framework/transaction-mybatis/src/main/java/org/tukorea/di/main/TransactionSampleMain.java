@@ -11,7 +11,7 @@ public class TransactionSampleMain {
 	public static void main(String[] args) throws Exception {
 		System.out.println("Hello Transaction-Mybatis");
 		
-		ctx = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+		ctx = new ClassPathXmlApplicationContext("classpath:applicationContext-annotation.xml");
 		MemberService memberService = ctx.getBean(MemberService.class);
 		
 		String strId1 = "hansol";

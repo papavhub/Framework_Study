@@ -3,6 +3,9 @@ package org.tukorea.di.service;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import org.tukorea.di.domain.StudentVO;
 import org.tukorea.di.persistence.MemberDAO;
 
@@ -37,6 +40,7 @@ public class MemberServiceImpl implements MemberService {
 	}
 	
 	@Override
+	@Transactional(propagation=Propagation.REQUIRED, isolation=Isolation.READ_COMMITTED, timeout=10) // annotation Transaction
 	public void updateMemberList(StudentVO student1, StudentVO student2) throws Exception {
 		memberDAO.update(student2);
 		memberDAO.update(student1);
