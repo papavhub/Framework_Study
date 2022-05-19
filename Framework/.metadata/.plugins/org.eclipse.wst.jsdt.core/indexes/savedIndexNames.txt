@@ -1,9 +1,6 @@
 INDEX VERSION 1.4+/Users/hyeminchoi/Desktop/Framework_Study/Framework/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
 1646667244.index
-2921717039.index
-1296733282.index
-2217552921.index
+3536321851.index
 4262826851.index
 4249556819.index
 1509203143.index
-2217823556.index
