@@ -23,14 +23,26 @@
 	
 	<context:component-scan base-package="org.tukorea.interweb.controller" />
 	
+	<!-- 1 -->
 	<beans:bean id="simpleInterceptor" class="org.tukorea.interweb.interceptor.SimpleInterceptor">
 	</beans:bean>
+	
+	<!-- 2 -->
+	<beans:bean id="measureInterceptor" class="org.tukorea.interweb.interceptor.MeasureInterceptor">
+	</beans:bean>
+	
 	
 	<interceptors>
 		<interceptor>
 			<mapping path="/doInterA"/>
 			<mapping path="/doInterB"/>
 			<beans:ref bean="simpleInterceptor"/>
+		</interceptor>
+		
+		<interceptor>
+			<mapping path="/doInterA"/>
+			<mapping path="/doInterB"/>
+			<beans:ref bean="measureInterceptor"/>
 		</interceptor>
 	</interceptors>
 	
