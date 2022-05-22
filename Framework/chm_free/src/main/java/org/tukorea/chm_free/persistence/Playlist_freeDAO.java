@@ -10,7 +10,7 @@ public interface Playlist_freeDAO {
 	public Integer add(Playlist_freeVO Playlist_freeVO) throws Exception;
 	public void add(PlaylistDetail_freeVO PlaylistDetail_freeVO) throws Exception;
 	
-	public String checkPassword(Integer playlistNumber) throws Exception;
+	public Playlist_freeVO selectbyId(Integer playlistNumber) throws Exception;
 	
 	public void delete(Integer playlistNumber) throws Exception;
 	public void deleteDetail(Integer playlistNumber) throws Exception;

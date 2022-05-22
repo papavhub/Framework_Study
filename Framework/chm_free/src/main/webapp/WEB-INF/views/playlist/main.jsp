@@ -40,7 +40,8 @@
 							<input type="button" id="deleteBtn" name="deleteBtn" value="삭제" onclick="deleteBtnFunc(${playlist.playlistNumber})">
 							<c:url value="/playlist/read?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 보기</a>
 							<c:url value="/playlist/modify?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 수정</a>
-							<c:url value="/playlist/delete?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 삭제</a>
+						
+						
 						</td>
 						
 					</tr>

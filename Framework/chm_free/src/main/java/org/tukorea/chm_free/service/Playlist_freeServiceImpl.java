@@ -54,8 +54,9 @@ public class Playlist_freeServiceImpl implements Playlist_freeService {
 	}
 
 	@Override
-	public String checkPassword(Integer playlistNumber) throws Exception {
-		return playlist_freeDAO.checkPassword(playlistNumber);
+	public Playlist_freeVO selectbyId(Integer playlistNumber) throws Exception {
+		Playlist_freeVO Playlist_freeVO = playlist_freeDAO.selectbyId(playlistNumber);
+		return Playlist_freeVO;
 	}
 
 	@Override

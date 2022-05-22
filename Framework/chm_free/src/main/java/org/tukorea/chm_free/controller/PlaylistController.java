@@ -62,8 +62,9 @@ public class PlaylistController {
 	
 	// checkPassword
 	@RequestMapping(value= {"/checkPassword"}, method=RequestMethod.POST)
-	public String checkPassword(@RequestParam("playlistNumber") Integer playlistNumber, @RequestParam("password") String password) throws Exception {
-		String playlistPassword = playlist_freeService.checkPassword(playlistNumber);
+	public String delete(@RequestParam("playlistNumber") Integer playlistNumber, @RequestParam("password") String password) throws Exception {
+		Playlist_freeVO Playlist_freeVO = playlist_freeService.selectbyId(playlistNumber);
+		String playlistPassword = Playlist_freeVO.getPlaylistPassword();
 		logger.info(playlistPassword.toString());
 		logger.info(password.toString());
 		
@@ -72,8 +73,15 @@ public class PlaylistController {
 			playlist_freeService.deleteAll(playlistNumber);
 		}
 		
-//		model.addAttribute("playlistPassword", playlistPassword);
 		return "redirect:http://localhost:8080/chm_free/playlist/list";
 	}	
+	
+	// modify
+	@RequestMapping(value= {"/modify"}, method=RequestMethod.GET)
+	public String modify(@RequestParam("playlistNumber") Integer playlistNumber, Model model) throws Exception {
+		
+		
+		return "playlist:update";
+	}
 
 }

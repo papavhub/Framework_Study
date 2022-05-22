@@ -43,9 +43,9 @@ public class Playlist_freeDAOImpl implements Playlist_freeDAO {
 	}
 
 	@Override
-	public String checkPassword(Integer playlistNumber) throws Exception {
+	public Playlist_freeVO selectbyId(Integer playlistNumber) throws Exception {
 		Playlist_freeVO Playlist_freeVO = sqlSession.selectOne(namespace + ".selectByIdPassword", playlistNumber);
-		return Playlist_freeVO.getPlaylistPassword();
+		return Playlist_freeVO;
 	}
 
 	@Override
