@@ -47,5 +47,11 @@ public class Playlist_freeServiceImpl implements Playlist_freeService {
 		}
 
 	}
+
+	@Override
+	public List<PlaylistDetail_freeVO> readMember(Integer playlistNumber) throws Exception {
+		// TODO Auto-generated method stub
+		return playlist_freeDAO.readDetail(playlistNumber);
+	}
 	
 }

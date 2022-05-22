@@ -11,4 +11,6 @@ public interface Playlist_freeService {
 	
 	public Integer addPlaylist(Playlist_freeVO playlist) throws Exception;
 	public void addALL(Playlist_freeVO playlist, List<String> Dvo) throws Exception;
+	
+	public List<PlaylistDetail_freeVO> readMember(Integer playlistNumber) throws Exception;
 }

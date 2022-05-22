@@ -19,5 +19,11 @@
 	<insert id="insertDetail">
 		insert into playlistDetail_free (playlistNumber, playlistDetailSource) values (#{playlistNumber}, #{playlistDetailSource})
 	</insert>
+	
+	<select id="selectByIdDetail" resultType="org.tukorea.chm_free.domain.PlaylistDetail_freeVO">
+		<![CDATA[
+			select * from playlistDetail_free where playlistNumber = #{playlistNumber}
+		]]>
+	</select>
 
 </mapper>  

@@ -35,11 +35,12 @@
 						<td><c:out value="${playlist.playlistDescribe}"/></td>
 						<td><c:out value="${playlist.playlistPhoto}"/></td>
 						
-						<%-- <td>
-							<c:url value="/member/read?id=${member.id}" var="url"/><a href="${url}">정보 보기</a>
-							<c:url value="/member/modify?id=${member.id}" var="url"/><a href="${url}">정보 수정</a>
-							<c:url value="/member/delete?id=${member.id}" var="url"/><a href="${url}">정보 삭제</a>
-						</td> --%>
+						<td>
+							<c:url value="/playlist/read?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 보기</a>
+							<c:url value="/playlist/modify?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 수정</a>
+							<c:url value="/playlist/delete?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 삭제</a>
+						</td>
+						
 					</tr>
 				</c:forEach>
 			</table>

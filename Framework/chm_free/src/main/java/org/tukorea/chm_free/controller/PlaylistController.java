@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.tukorea.chm_free.domain.PlaylistDetail_freeVO;
 import org.tukorea.chm_free.domain.Playlist_freeVO;
-//import org.tukorea.chm_free.service.PlaylistDetail_freeService;
 import org.tukorea.chm_free.service.Playlist_freeService;
 
 
@@ -52,4 +51,14 @@ public class PlaylistController {
 		playlist_freeService.addALL(vo, playlistDetail);
 		return "redirect:http://localhost:8080/chm_free/playlist/list";
 	}
+	
+	// read Detail
+	@RequestMapping(value= {"/read"}, method=RequestMethod.GET)
+	public String read(@RequestParam("playlistNumber") String playlistNumber, Model model) throws Exception {
+		List<PlaylistDetail_freeVO> playlistDetail = playlist_freeService.readMember(Integer.parseInt(playlistNumber));
+		model.addAttribute("PlaylistDetail_freeVO", playlistDetail);
+		return "playlist/read";
+	}
+	
+
 }

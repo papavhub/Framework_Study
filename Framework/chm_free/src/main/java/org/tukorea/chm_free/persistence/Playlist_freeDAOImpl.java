@@ -34,5 +34,12 @@ public class Playlist_freeDAOImpl implements Playlist_freeDAO {
 	public void add(PlaylistDetail_freeVO PlaylistDetail_freeVO) throws Exception {
 		sqlSession.insert(namespace + ".insertDetail", PlaylistDetail_freeVO);
 	}
+
+	@Override
+	public List<PlaylistDetail_freeVO> readDetail(Integer playlistNumber) throws Exception {
+		List<PlaylistDetail_freeVO> playlistDetail_freeVOList = new ArrayList<PlaylistDetail_freeVO>();
+		playlistDetail_freeVOList = sqlSession.selectList(namespace + ".selectByIdDetail", playlistNumber);
+		return playlistDetail_freeVOList;
+	}
 	
 }
