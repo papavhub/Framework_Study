@@ -22,9 +22,20 @@
 					<tr><th>playlistPhoto</th><td><input type="text" name="playlistPhoto" autofocus placeholder="공백 없이 입력하세요"></td></tr>
 				</table>
 				
-				<table>
+<!-- 				<table>
 					<tr><th>playlistDetailSource</th><td><input type="text" name="playlistDetailSource" autofocus placeholder="공백 없이 입력하세요"></td></tr>				
+				</table> -->
+				
+				<table>
+					<tr>
+						<td>playlistDetailSource</td>
+					</tr>
+					
+					<tbody id="tblShow"></tbody>
 				</table>
+				
+				<input type="button" id="addBtn" name="addBtn" value="행추가" onclick="rowAdd()">
+				<input type="button" id="removeBtn" name="addBtn" value="행삭제" onclick="rowRemove()">
 				
 				<dl>
 					<dd><input type="submit" name="submit" value="보내기"></dd>
@@ -34,6 +45,23 @@
 			</form>
 		</div>
 	</body>
+	
+	
+	
+	
+	<script>
+		function rowAdd(){
+			var objRow = document.all["tblShow"].insertRow();
+			
+			var objCell_playlistDetailSource = objRow.insertCell();
+			objCell_playlistDetailSource.innerHTML = "<input type='text' name='playlistDetailSource' autofocus placeholder='공백 없이 입력하세요'/>"
+		}
+		
+		function rowRemove(){
+			var objRow = document.all["tblShow"].deleteRow(-1);
+			
+		}
+	</script>
 	
 
 
