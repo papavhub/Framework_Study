@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.tukorea.chm_free.domain.PlaylistDetail_freeVO;
 import org.tukorea.chm_free.domain.Playlist_freeVO;
 //import org.tukorea.chm_free.service.PlaylistDetail_freeService;
@@ -38,10 +39,17 @@ public class PlaylistController {
 		return "playlist/create";
 	}
 	
-	// create Playlist
+	// create Playlist (transaction)
 	@RequestMapping(value= {"/playlistCreate"}, method=RequestMethod.POST)
-	public String createPlaylist(@ModelAttribute("playlist") Playlist_freeVO vo) throws Exception {
-		playlist_freeService.addPlaylist(vo);
+	public String createPlaylist(@RequestParam("playlistName") String playlistName, @RequestParam("playlistDescribe") String playlistDescribe, @RequestParam("playlistPassword") String playlistPassword, @RequestParam("playlistPhoto") String playlistPhoto, @RequestParam("playlistDetail") List<String> playlistDetail) throws Exception {
+		Playlist_freeVO vo = new Playlist_freeVO();
+		vo.setPlaylistName(playlistName);
+		vo.setPlaylistLikes(0);
+		vo.setPlaylistDescribe(playlistDescribe);
+		vo.setPlaylistPassword(playlistPassword);
+		vo.setPlaylistPhoto(playlistPhoto);
+		
+		playlist_freeService.addALL(vo, playlistDetail);
 		return "redirect:http://localhost:8080/chm_free/playlist/list";
 	}
 }

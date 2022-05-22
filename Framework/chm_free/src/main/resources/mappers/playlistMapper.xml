@@ -12,12 +12,12 @@
 		]]>
 	</select>
 	
-	<insert id="insert">
+	<insert id="insert" parameterType="org.tukorea.chm_free.domain.Playlist_freeVO" useGeneratedKeys="true" keyProperty="playlistNumber">
 		insert into playlist_free (playlistName, playlistDescribe, playlistPassword, playlistPhoto) values (#{playlistName}, #{playlistDescribe}, #{playlistPassword}, #{playlistPhoto})
 	</insert>
 	
-<!-- 	<insert id="insertDetail">
+	<insert id="insertDetail">
 		insert into playlistDetail_free (playlistNumber, playlistDetailSource) values (#{playlistNumber}, #{playlistDetailSource})
-	</insert> -->
+	</insert>
 
 </mapper>  

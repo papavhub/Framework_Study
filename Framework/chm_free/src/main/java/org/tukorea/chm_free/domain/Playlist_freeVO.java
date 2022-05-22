@@ -9,8 +9,7 @@ public class Playlist_freeVO {
 	private String playlistLink;
 	private String playlistPassword;
 	private String playlistPhoto;
-	
-	
+
 	public int getPlaylistNumber() {
 		return playlistNumber;
 	}
