@@ -25,5 +25,19 @@
 			select * from playlistDetail_free where playlistNumber = #{playlistNumber}
 		]]>
 	</select>
+	
+	<select id="selectByIdPassword" resultType="org.tukorea.chm_free.domain.Playlist_freeVO">
+		<![CDATA[
+			select * from playlist_free where playlistNumber = #{playlistNumber}
+		]]>
+	</select>
+	
+	<delete id="delete">
+		delete from playlist_free where playlistNumber=#{playlistNumber}
+	</delete>
+	
+	<delete id="deleteDetail">
+		delete from playlistDetail_free where playlistNumber=#{playlistNumber}
+	</delete>
 
 </mapper>  

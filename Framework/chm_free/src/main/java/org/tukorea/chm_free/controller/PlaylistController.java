@@ -60,5 +60,20 @@ public class PlaylistController {
 		return "playlist/read";
 	}
 	
+	// checkPassword
+	@RequestMapping(value= {"/checkPassword"}, method=RequestMethod.POST)
+	public String checkPassword(@RequestParam("playlistNumber") Integer playlistNumber, @RequestParam("password") String password) throws Exception {
+		String playlistPassword = playlist_freeService.checkPassword(playlistNumber);
+		logger.info(playlistPassword.toString());
+		logger.info(password.toString());
+		
+		if(playlistPassword.contentEquals(password)) {
+			logger.info("yes");
+			playlist_freeService.deleteAll(playlistNumber);
+		}
+		
+//		model.addAttribute("playlistPassword", playlistPassword);
+		return "redirect:http://localhost:8080/chm_free/playlist/list";
+	}	
 
 }

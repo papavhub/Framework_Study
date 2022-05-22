@@ -41,5 +41,21 @@ public class Playlist_freeDAOImpl implements Playlist_freeDAO {
 		playlistDetail_freeVOList = sqlSession.selectList(namespace + ".selectByIdDetail", playlistNumber);
 		return playlistDetail_freeVOList;
 	}
+
+	@Override
+	public String checkPassword(Integer playlistNumber) throws Exception {
+		Playlist_freeVO Playlist_freeVO = sqlSession.selectOne(namespace + ".selectByIdPassword", playlistNumber);
+		return Playlist_freeVO.getPlaylistPassword();
+	}
+
+	@Override
+	public void delete(Integer playlistNumber) throws Exception {
+		sqlSession.delete(namespace + ".delete", playlistNumber);
+	}
+
+	@Override
+	public void deleteDetail(Integer playlistNumber) throws Exception {
+		sqlSession.delete(namespace + ".deleteDetail", playlistNumber);
+	}
 	
 }

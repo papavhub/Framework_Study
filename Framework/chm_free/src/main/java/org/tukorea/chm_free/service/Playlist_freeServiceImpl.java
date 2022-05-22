@@ -50,8 +50,22 @@ public class Playlist_freeServiceImpl implements Playlist_freeService {
 
 	@Override
 	public List<PlaylistDetail_freeVO> readMember(Integer playlistNumber) throws Exception {
-		// TODO Auto-generated method stub
 		return playlist_freeDAO.readDetail(playlistNumber);
+	}
+
+	@Override
+	public String checkPassword(Integer playlistNumber) throws Exception {
+		return playlist_freeDAO.checkPassword(playlistNumber);
+	}
+
+	@Override
+	@Transactional(propagation=Propagation.REQUIRED, isolation=Isolation.READ_COMMITTED, timeout=10) // annotation Transaction
+	public void deleteAll(Integer playlistNumber) throws Exception {
+		// 1
+		playlist_freeDAO.deleteDetail(playlistNumber);
+		
+		// 2
+		playlist_freeDAO.delete(playlistNumber);
 	}
 	
 }

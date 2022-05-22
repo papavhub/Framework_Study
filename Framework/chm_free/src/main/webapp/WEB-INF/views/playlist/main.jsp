@@ -11,6 +11,7 @@
 	</head>
 	
 	<body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<div align=center>
 		
 			<header>Playlist List</header>
@@ -36,6 +37,7 @@
 						<td><c:out value="${playlist.playlistPhoto}"/></td>
 						
 						<td>
+							<input type="button" id="deleteBtn" name="deleteBtn" value="삭제" onclick="deleteBtnFunc(${playlist.playlistNumber})">
 							<c:url value="/playlist/read?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 보기</a>
 							<c:url value="/playlist/modify?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 수정</a>
 							<c:url value="/playlist/delete?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 삭제</a>
@@ -48,6 +50,26 @@
 			
 		</div>
 	</body>
+	
+	
+	
+	<script>
+		function deleteBtnFunc(number){
+			var password = prompt('삭제를 위해서 비밀번호를 입력해주세요.', "password")
+				
+			$.ajax({
+	            type: "POST",
+	            url: "http://localhost:8080/chm_free/playlist/checkPassword",
+	            datatype: "json",
+	            traditional: true,
+	            data: {
+	            	playlistNumber: number,
+	            	password: password
+	            }
+	        });
+
+		}
+	</script>
 
 
 </html>
