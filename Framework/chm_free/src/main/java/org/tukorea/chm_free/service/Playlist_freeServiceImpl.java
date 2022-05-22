@@ -20,6 +20,10 @@ public class Playlist_freeServiceImpl implements Playlist_freeService {
 	@Autowired
 	private Playlist_freeDAO playlist_freeDAO;
 	
+	@Override
+	public void modify(Playlist_freeVO playlist) throws Exception {
+		playlist_freeDAO.modify(playlist);
+	}
 
 	@Override
 	public List<Playlist_freeVO> readPlaylistList() throws Exception {

@@ -16,5 +16,7 @@ public interface Playlist_freeService {
 	
 	public void deleteAll(Integer playlistNumber) throws Exception;
 	
+	public void modify(Playlist_freeVO playlist) throws Exception;
+	
 	public List<PlaylistDetail_freeVO> readMember(Integer playlistNumber) throws Exception;
 }

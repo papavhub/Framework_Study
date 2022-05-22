@@ -40,7 +40,7 @@ public class PlaylistController {
 	
 	// create Playlist (transaction)
 	@RequestMapping(value= {"/playlistCreate"}, method=RequestMethod.POST)
-	public String createPlaylist(@RequestParam("playlistName") String playlistName, @RequestParam("playlistDescribe") String playlistDescribe, @RequestParam("playlistPassword") String playlistPassword, @RequestParam("playlistPhoto") String playlistPhoto, @RequestParam("playlistDetail") List<String> playlistDetail) throws Exception {
+	public String createPlaylist(@RequestParam("playlistName") String playlistName, @RequestParam("playlistDescribe") String playlistDescribe, @RequestParam("playlistPassword") Integer playlistPassword, @RequestParam("playlistPhoto") String playlistPhoto, @RequestParam("playlistDetail") List<String> playlistDetail) throws Exception {
 		Playlist_freeVO vo = new Playlist_freeVO();
 		vo.setPlaylistName(playlistName);
 		vo.setPlaylistLikes(0);
@@ -64,11 +64,9 @@ public class PlaylistController {
 	@RequestMapping(value= {"/checkPassword"}, method=RequestMethod.POST)
 	public String delete(@RequestParam("playlistNumber") Integer playlistNumber, @RequestParam("password") String password) throws Exception {
 		Playlist_freeVO Playlist_freeVO = playlist_freeService.selectbyId(playlistNumber);
-		String playlistPassword = Playlist_freeVO.getPlaylistPassword();
-		logger.info(playlistPassword.toString());
-		logger.info(password.toString());
+		Integer playlistPassword = Playlist_freeVO.getPlaylistPassword();
 		
-		if(playlistPassword.contentEquals(password)) {
+		if(playlistPassword.toString().contentEquals(password)) {
 			logger.info("yes");
 			playlist_freeService.deleteAll(playlistNumber);
 		}
@@ -79,9 +77,15 @@ public class PlaylistController {
 	// modify
 	@RequestMapping(value= {"/modify"}, method=RequestMethod.GET)
 	public String modify(@RequestParam("playlistNumber") Integer playlistNumber, Model model) throws Exception {
-		
-		
-		return "playlist:update";
+		Playlist_freeVO Playlist_freeVO = playlist_freeService.selectbyId(playlistNumber);
+		model.addAttribute("Playlist_freeVO", Playlist_freeVO);
+		return "playlist/update";
+	}
+	
+	@RequestMapping(value= {"/startModify"}, method=RequestMethod.POST)
+	public String startModify(@ModelAttribute("Playlist_freeVO") Playlist_freeVO Playlist_freeVO) throws Exception {
+		playlist_freeService.modify(Playlist_freeVO);
+		return "redirect:http://localhost:8080/chm_free/playlist/list";
 	}
 
 }
