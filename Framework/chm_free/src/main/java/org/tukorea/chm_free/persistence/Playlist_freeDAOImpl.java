@@ -24,9 +24,9 @@ public class Playlist_freeDAOImpl implements Playlist_freeDAO {
 	}
 
 	@Override
-	public Playlist_freeVO read(Integer id) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+	public Integer add(Playlist_freeVO Playlist_freeVO) throws Exception {
+		sqlSession.insert(namespace + ".insert", Playlist_freeVO);
+		return Playlist_freeVO.getPlaylistNumber();
 	}
 	
 }

@@ -11,5 +11,13 @@
 			select * from playlist_free
 		]]>
 	</select>
+	
+	<insert id="insert">
+		insert into playlist_free (playlistName, playlistDescribe, playlistPassword, playlistPhoto) values (#{playlistName}, #{playlistDescribe}, #{playlistPassword}, #{playlistPhoto})
+	</insert>
+	
+<!-- 	<insert id="insertDetail">
+		insert into playlistDetail_free (playlistNumber, playlistDetailSource) values (#{playlistNumber}, #{playlistDetailSource})
+	</insert> -->
 
 </mapper>  
