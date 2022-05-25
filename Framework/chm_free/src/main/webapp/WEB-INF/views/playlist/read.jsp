@@ -6,23 +6,17 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
-<title>read</title>
-<link rel="stylesheet" href="../resources/member.css" type="text/css"></link>
+	<meta charset="UTF-8">
+	<title>read</title>
+	<link rel="stylesheet" href="../resources/read.css" type="text/css"></link>
 </head>
 
 <body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	
 	<div align=center>
 
 		<header>read</header>
-
-		<c:forEach var="playlistDetail" items="${PlaylistDetail_freeVO}">
-			<tr>
-				<td><c:out value="${playlistDetail.playlistNumber}" /></td>
-				<td><c:out value="${playlistDetail.playlistDetailSource}" /></td>
-
-			</tr>
-		</c:forEach>
 
 		<div id="player"></div>
 
@@ -99,10 +93,44 @@
 				return (match && match[7].length == 11) ? match[7] : false;
 			}
 		</script>
+		
+		<script>
+
+		/* backGround Motion */
+		
+		$(document).ready(function(){
+		  var stars=800;
+		  var $stars=$(".stars");
+		  var r=800;
+		  for(var i=0;i<stars;i++){
+		    var $star=$("<div/>").addClass("star");
+		    $stars.append($star);
+		  }
+		  $(".star").each(function(){
+		    var cur=$(this);
+		    var s=0.2+(Math.random()*1);
+		    var curR=r+(Math.random()*300);
+		    cur.css({ 
+		      transformOrigin:"0 0 "+curR+"px",
+		      transform:" translate3d(0,0,-"+curR+"px) rotateY("+(Math.random()*360)+"deg) rotateX("+(Math.random()*-50)+"deg) scale("+s+","+s+")"
+		       
+		    })
+		  })
+		})
+
+		</script>
+		
+		<p></p>
+		<c:forEach var="playlistDetail" items="${PlaylistDetail_freeVO}">
+			<tr>
+				<td><c:out value="<h2>${playlistDetail.playlistDetailSource}</h2>" escapeXml="false"/></td>
+			</tr>
+		</c:forEach>
 
 
 
 	</div>
+		
 </body>
 
 
