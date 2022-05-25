@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+	header
+	{
+		font-family: 'Smooch', cursive;
+		color: white;
+		font-size: 80px;
+		padding: 30px 10px 50px 10px;
+		/* 위 오른쪽 아래 왼쪽 */
+	}
+	
+	th, td {
+		font-size: 20pt;
+		font-color: white;
+		ng-hide: true;
+		border: 30px;
+		height: 30px;
+		padding: 5px;
+		
+	}
+	
+	input{
+		border: none;
+		background-color:transparent;
+		color: white;
+		font-size: 20px;
+		width: 300px;
+	}
+	
+	dl {
+		padding: 10px 10px 30px 10px;
+	}
+	
+	.test {
+	  overflow: hidden;
+	  width: 154px;
+	  height: 40px;
+	  color: #efefef;
+	  background: #75517D;
+	  border-radius: 20px;
+	}
+
+
+
+@import "compass/css3";
+
+	body{ 
+	  background:radial-gradient(200% 100% at bottom center,#F7F7B6,#E96F92,#75517D,#1B2947); 
+	  background:radial-gradient(220% 105% at top center,#1B2947 10%,#75517D 40%,#E96F92 65%,#F7F7B6); 
+	  background-attachment:fixed; 
+	  overflow:hidden;
+	}
+	@keyframes rotate{
+	  0%{
+	    transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+	  } 
+	  100%{
+	    transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+	  } 
+	}
+	.stars{
+	  transform:perspective(500px);
+	  transform-style:preserve-3d;
+	  position:absolute;
+	  bottom:0;
+	  perspective-origin:50% 100%;
+	  left:50%;
+	  animation:rotate 90s infinite linear;
+	}
+	.star{
+	  width:2px;
+	  height:2px;
+	  background:#F7F7B6;
+	  //border-radius:100%;
+	  position:absolute;
+	  top:0;
+	  left:0;
+	  transform-origin:0 0 -300px;
+	  transform:translate3d(0,0,-300px);
+	  backface-visibility:hidden;
+	}
+	
+	
+	
+/* btn */

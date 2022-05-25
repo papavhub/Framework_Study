@@ -9,11 +9,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Create Playlist</title>
-		<link rel="stylesheet" href="../resources/member.css" type="text/css"></link>
+		<link rel="stylesheet" href="../resources/create.css" type="text/css"></link>
 	</head>
 	
 	<body>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	
+		<div align=center class="stars">
+		</div>
 	
 		<div align=center>
 		
@@ -25,38 +28,41 @@
 				
 					<tbody id="playlist">
 						<tr>
-							<th>playlistName</th>
+							<th style="color:white; font-size:20pt;">playlistName</th>
 							<td><input type="text" id="playlistName" name="playlistName" autofocus placeholder="공백 없이 입력하세요"></td>
 						</tr>
 						<tr>
-							<th>playlistDescribe</th>
+							<th style="color:white; font-size:20pt;">playlistDescribe</th>
 							<td><input type="text" id="playlistDescribe" name="playlistDescribe" autofocus placeholder="공백 없이 입력하세요"></td>
 						</tr>
 						<tr>
-							<th>playlistPassword</th><td>
+							<th style="color:white; font-size:20pt;">playlistPassword</th><td>
 							<input type="number" id="playlistPassword" name="playlistPassword" autofocus placeholder="공백 없이 입력하세요(정수형 숫자)"></td>
 						</tr>
 						<tr>
-							<th>playlistPhoto</th><td>
+							<th style="color:white; font-size:20pt;">playlistPhoto</th><td>
 							<input type="text" id="playlistPhoto" name="playlistPhoto" autofocus placeholder="공백 없이 입력하세요"></td>
 						</tr>
 					</tbody>	
 				
 				<!-- playlistDetail	 -->	
 					<tr>
-						<th>playlistDetailSource</th>
+						<th style="color:white; font-size:20pt;">playlistDetailSource</th>
 						<tbody id="playlistDetail"></tbody>
 					</tr>
 					
 				</table>
 				
 				<dl>
-					<input type="button" id="addBtn" name="addBtn" value="행추가" onclick="rowAdd()">
-					<input type="button" id="removeBtn" name="addBtn" value="행삭제" onclick="rowRemove()">
+					<input type="button" id="addBtn" name="addBtn" value="행추가" onclick="rowAdd()" class="test">
+					<input type="button" id="removeBtn" name="addBtn" value="행삭제" onclick="rowRemove()" class="test">
 				</dl>
 				
 				<dl>
-					<input type="button" id="submitBtn" name="submitBtn" value="보내기" onclick="post()">
+					
+					<input type="button" id="submitBtn" name="submitBtn" value="보내기" onclick="post()" class="test"/>
+				
+					
 				</dl>
 
 		</div>
@@ -120,6 +126,32 @@
 
 		}	
 		
+		/* backGround Motion */
+		
+		$(document).ready(function(){
+		  var stars=800;
+		  var $stars=$(".stars");
+		  var r=800;
+		  for(var i=0;i<stars;i++){
+		    var $star=$("<div/>").addClass("star");
+		    $stars.append($star);
+		  }
+		  $(".star").each(function(){
+		    var cur=$(this);
+		    var s=0.2+(Math.random()*1);
+		    var curR=r+(Math.random()*300);
+		    cur.css({ 
+		      transformOrigin:"0 0 "+curR+"px",
+		      transform:" translate3d(0,0,-"+curR+"px) rotateY("+(Math.random()*360)+"deg) rotateX("+(Math.random()*-50)+"deg) scale("+s+","+s+")"
+		       
+		    })
+		  })
+		})
+
+		
+
+
+
 	</script>
 
 </html>
