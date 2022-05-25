@@ -20,7 +20,7 @@
 					<tr><th>playlistNumber</th><td><input type="number" name="playlistNumber" autofocus value="${Playlist_freeVO.playlistNumber}"></td></tr>
 					<tr><th>playlistName</th><td><input type="text" name="playlistName" autofocus value="${Playlist_freeVO.playlistName}"></td></tr>
 					<tr><th>playlistDescribe</th><td><input type="text" name="playlistDescribe" autofocus value="${Playlist_freeVO.playlistDescribe}"></td></tr>
-					<tr><th>playlistLikes</th><td><input type="number" name="playlistLikes" autofocus value="${Playlist_freeVO.playlistName}"></td></tr>
+					<%-- <tr><th>playlistLikes</th><td><input type="number" name="playlistLikes" autofocus value="${Playlist_freeVO.playlistName}"></td></tr> --%>
 					<tr><th>playlistLink</th><td><input type="text" name="playlistLink" autofocus value="${Playlist_freeVO.playlistName}"></td></tr>
 					<tr><th>playlistPassword</th><td><input type="number" name="playlistPassword" autofocus value=""></td></tr>
 					<tr><th>playlistPhoto</th><td><input type="text" name="playlistPhoto" autofocus value="${Playlist_freeVO.playlistPhoto}"></td></tr>

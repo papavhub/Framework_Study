@@ -68,7 +68,6 @@
 	            	password: password
 	            }
 	        });
-
 		}
 	</script>
 

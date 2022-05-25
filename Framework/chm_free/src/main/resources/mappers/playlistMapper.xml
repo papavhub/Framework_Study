@@ -41,7 +41,7 @@
 	</delete>
 	
 	<select id="modify">
-		update playlist_free set playlistNumber=#{playlistNumber}, playlistName=#{playlistName}, playlistDescribe=#{playlistDescribe}, playlistLikes=#{playlistLikes}, playlistLink=#{playlistLink}, playlistPassword=#{playlistPassword}, playlistPhoto=#{playlistPhoto} 
+		update playlist_free set playlistNumber=#{playlistNumber}, playlistName=#{playlistName}, playlistDescribe=#{playlistDescribe}, playlistPassword=#{playlistPassword}, playlistPhoto=#{playlistPhoto} 
 		where playlistNumber=#{playlistNumber} and playlistPassword=#{playlistPassword}
 	</select>
 

@@ -34,7 +34,7 @@
 						</tr>
 						<tr>
 							<th>playlistPassword</th><td>
-							<input type="text" id="playlistPassword" name="playlistPassword" autofocus placeholder="공백 없이 입력하세요"></td>
+							<input type="number" id="playlistPassword" name="playlistPassword" autofocus placeholder="공백 없이 입력하세요(정수형 숫자)"></td>
 						</tr>
 						<tr>
 							<th>playlistPhoto</th><td>
