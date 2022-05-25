@@ -16,6 +16,7 @@ public interface Playlist_freeDAO {
 	public void deleteDetail(Integer playlistNumber) throws Exception;
 	
 	public void modify(Playlist_freeVO Playlist_freeVO) throws Exception;
+	public void heart(Playlist_freeVO Playlist_freeVO) throws Exception;
 	
 	public List<PlaylistDetail_freeVO> readDetail(Integer playlistNumber) throws Exception;
 }

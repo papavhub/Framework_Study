@@ -16,8 +16,6 @@
 
 		<header>read</header>
 
-
-
 		<c:forEach var="playlistDetail" items="${PlaylistDetail_freeVO}">
 			<tr>
 				<td><c:out value="${playlistDetail.playlistNumber}" /></td>

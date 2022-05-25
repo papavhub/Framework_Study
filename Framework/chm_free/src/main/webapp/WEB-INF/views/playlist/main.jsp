@@ -26,7 +26,8 @@
 				<th>playlistNumber</th>
 				<th>playlistName</th>
 				<th>playlistDescribe</th>
-				<th>playlistPhoto</th>				
+				<th>playlistPhoto</th>	
+				<th>playlistLikes</th>				
 				</tr>
 			
 				<c:forEach var="playlist" items="${playlistList}">
@@ -35,11 +36,13 @@
 						<td><c:out value="${playlist.playlistName}"/></td>
 						<td><c:out value="${playlist.playlistDescribe}"/></td>
 						<td><c:out value="${playlist.playlistPhoto}"/></td>
+						<td><c:out value="${playlist.playlistLikes}"/></td>
 						
 						<td>
 							<input type="button" id="deleteBtn" name="deleteBtn" value="삭제" onclick="deleteBtnFunc(${playlist.playlistNumber})">
 							<c:url value="/playlist/read?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 보기</a>
 							<c:url value="/playlist/modify?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 수정</a>
+							<c:url value="/playlist/heart?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">heart</a>
 						
 						
 						</td>

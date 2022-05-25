@@ -13,7 +13,7 @@
 	</select>
 	
 	<insert id="insert" parameterType="org.tukorea.chm_free.domain.Playlist_freeVO" useGeneratedKeys="true" keyProperty="playlistNumber">
-		insert into playlist_free (playlistName, playlistDescribe, playlistPassword, playlistPhoto) values (#{playlistName}, #{playlistDescribe}, #{playlistPassword}, #{playlistPhoto})
+		insert into playlist_free (playlistName, playlistDescribe, playlistPassword, playlistPhoto, playlistLikes) values (#{playlistName}, #{playlistDescribe}, #{playlistPassword}, #{playlistPhoto}, #{playlistLikes})
 	</insert>
 	
 	<insert id="insertDetail">
@@ -43,6 +43,11 @@
 	<select id="modify">
 		update playlist_free set playlistNumber=#{playlistNumber}, playlistName=#{playlistName}, playlistDescribe=#{playlistDescribe}, playlistPassword=#{playlistPassword}, playlistPhoto=#{playlistPhoto} 
 		where playlistNumber=#{playlistNumber} and playlistPassword=#{playlistPassword}
+	</select>
+	
+	<select id="heart">
+		update playlist_free set playlistLikes=#{playlistLikes}
+		where playlistNumber=#{playlistNumber}
 	</select>
 
 </mapper>  

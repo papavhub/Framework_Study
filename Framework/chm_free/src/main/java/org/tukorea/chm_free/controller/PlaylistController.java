@@ -87,5 +87,15 @@ public class PlaylistController {
 		playlist_freeService.modify(Playlist_freeVO);
 		return "redirect:http://localhost:8080/chm_free/playlist/list";
 	}
+	
+	// heart
+	@RequestMapping(value= {"/heart"}, method=RequestMethod.GET)
+	public String heart(@RequestParam("playlistNumber") Integer playlistNumber, Model model) throws Exception {
+		Playlist_freeVO playlist_freeVO = playlist_freeService.selectbyId(playlistNumber);
+		playlist_freeVO.setPlaylistLikes(playlist_freeVO.getPlaylistLikes() + 1);
+		logger.info(Integer.toString(playlist_freeVO.getPlaylistLikes()));
+		playlist_freeService.heart(playlist_freeVO);
+		return "redirect:http://localhost:8080/chm_free/playlist/list";
+	}
 
 }

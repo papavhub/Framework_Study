@@ -67,10 +67,13 @@ public class Playlist_freeDAOImpl implements Playlist_freeDAO {
 	@Override
 	public void modify(Playlist_freeVO playlist_freeVO) throws Exception {
 		Integer a = sqlSession.update(namespace + ".modify", playlist_freeVO);
-		logger.info(a.toString());
 		Integer b = playlist_freeVO.getPlaylistNumber();
-		logger.info(b.toString());
-		logger.info(playlist_freeVO.getPlaylistDescribe());
+	}
+
+	@Override
+	public void heart(Playlist_freeVO Playlist_freeVO) throws Exception {
+		Integer a = sqlSession.update(namespace + ".heart", Playlist_freeVO);
+		
 	}
 	
 }

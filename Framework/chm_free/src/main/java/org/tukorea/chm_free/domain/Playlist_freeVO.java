@@ -6,7 +6,6 @@ public class Playlist_freeVO {
 	private String playlistName;
 	private String playlistDescribe;
 	private int playlistLikes;
-	private String playlistLink;
 	private int playlistPassword;
 	private String playlistPhoto;
 
@@ -33,12 +32,6 @@ public class Playlist_freeVO {
 	}
 	public void setPlaylistLikes(int playlistLikes) {
 		this.playlistLikes = playlistLikes;
-	}
-	public String getPlaylistLink() {
-		return playlistLink;
-	}
-	public void setPlaylistLink(String playlistLink) {
-		this.playlistLink = playlistLink;
 	}
 	public int getPlaylistPassword() {
 		return playlistPassword;
