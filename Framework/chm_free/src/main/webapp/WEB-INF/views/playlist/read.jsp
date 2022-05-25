@@ -28,64 +28,83 @@
 				<div id="player"></div>
 
 			    <script>
-			    	var count = 1
 			    
-			    	<c:forEach var="playlistDetail" items="${PlaylistDetail_freeVO}">
-		
-					      var tag = document.createElement('script');
-					      
-					      // get from DB
-					      var video_id = youtube_parser("${playlistDetail.playlistDetailSource}")
+			    // youtube API
+			    var tag = document.createElement('script');
+			    tag.src = "https://www.youtube.com/iframe_api";
+			    var firstScriptTag = document.getElementsByTagName('script')[0];
+			    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			
+			    // player variable
+			    var player;
+			    var done = false;
+			    
+			    var playList = [];
+			    var index = 0			    
+			    <c:forEach var="playlistDetail" items="${PlaylistDetail_freeVO}" varStatus="status">
+			    	playList.push("${playlistDetail.playlistDetailSource}")
+			    </c:forEach>
 
-					
-					    // youtube API
-					      tag.src = "https://www.youtube.com/iframe_api";
-					      var firstScriptTag = document.getElementsByTagName('script')[0];
-					      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-					
-					      // player variable
-					      var player;
-					      function onYouTubeIframeAPIReady() {
+
+				console.log(playList[index])
+
+				
+				
+					    function onYouTubeIframeAPIReady() {
 					        player = new YT.Player('player', {
 					          height: '360',
 					          width: '640',
-					          videoId: video_id,
+					          videoId: youtube_parser(playList[index]),
+					          origin: 'http://localhost:8080',
 					          events: {
 					            'onReady': onPlayerReady,
 					            'onStateChange': onPlayerStateChange
 					          }
 					        });
-					      }
+					    }
 					
-					      // after loading
-					      function onPlayerReady(event) {
+					    // after loading
+					    function onPlayerReady(event) {
+					    	/* event.target.setVolume(70); // 볼륨 설정 */
 					        event.target.playVideo(); // auto play
-					      }
-					
-					  
-					      var done = false;
+					    }
 					      
-					      // player state change
-					      function onPlayerStateChange(event) {
-					        if (event.data == YT.PlayerState.PLAYING && !done) {
-					          setTimeout(stopVideo, 6000);
-					          done = true;
+					    // player state change
+					    function onPlayerStateChange(event) {
+					        
+					     // video end
+					     if(event.data == YT.PlayerState.ENDED){
+					        if(index < playList.length - 1){ // 마지막 플리 음악이 아님 
+					        	console.log(index)
+					        	console.log(playList.length)
+					        	player.stopVideo();
+					        	player.destroy();
+					        	player = null;
+					        	
+					        	// 다음 재생
+					        	index += 1
+					        	onYouTubeIframeAPIReady();
+					        	
 					        }
-					      }
+					        else {
+					        	done = true;
+					        }
+					     }
+					        
+					    }
 					      
-					      // stop video
-					      function stopVideo() {
+					    // stop video
+					    function stopVideo() {
 					        player.stopVideo();
-					      }
+					    }
 					      
-					      // get video_id from url
-					      function youtube_parser(url){
-							    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
-							    var match = url.match(regExp);
-							    return (match&&match[7].length==11)? match[7] : false;
-							}
-				      
-					</c:forEach>
+					    // get video_id from url
+					    function youtube_parser(url){
+							var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+							var match = url.match(regExp);
+							return (match&&match[7].length==11)? match[7] : false;
+						}
+
 			      
 			    </script>
 
