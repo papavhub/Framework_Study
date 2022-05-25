@@ -95,7 +95,10 @@ public class PlaylistController {
 		playlist_freeVO.setPlaylistLikes(playlist_freeVO.getPlaylistLikes() + 1);
 		logger.info(Integer.toString(playlist_freeVO.getPlaylistLikes()));
 		playlist_freeService.heart(playlist_freeVO);
-		return "redirect:http://localhost:8080/chm_free/playlist/list";
+		
+		List<Playlist_freeVO> playlistList = playlist_freeService.readPlaylistList();
+		model.addAttribute("playlistList", playlistList);
+		return "playlist/main";
 	}
 
 }

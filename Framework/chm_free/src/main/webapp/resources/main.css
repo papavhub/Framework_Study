@@ -2,7 +2,7 @@
 
 	/* background gradient Color */
 	.whole {
-        background: linear-gradient(45deg, Violet, Orange);
+        color: white;
 	}
 	
 	.floatingBtn {
@@ -10,19 +10,30 @@
   		width: 20%;
 	}
 	
+	.heartBtn {
+		height: 100%;
+	}
+	
+	.update {
+		font-size: 15pt;
+  		text-decoration-line: none;
+  		color: gray;
+	}
+	
 
 	header
 	{
-		margin:20px 10px 40px 10px; 
-		font-family:"Freestyle Script","Mistral";
-		font-size:50px;
-		text-shadow:3px 3px 8px gray;
-		text-align:center;
+		font-family: 'Smooch', cursive;
+		color: white;
+		font-size: 80px;
+		padding: 30px 10px 50px 10px;
+		/* 위 오른쪽 아래 왼쪽 */
 	}
 
 	body {
-	    color: black;
-	    font-family: '맑은 고딕', '돋움', '고딕';
+		font-size: 20pt;
+  		text-decoration-line: none;
+  		color: white;
 	}
 
 	table {
@@ -31,11 +42,30 @@
 
 	th, td {
 		font-size: 10pt;
-		border: 1px solid lightgray;
+		border: 30px;
 		height: 30px;
+		width: 1000px;
 		padding: 5px;
 		color: #000000;
-		background-color: #EAF2D3;
+		
+	}
+	
+	/* 밑줄 없애기  */
+	a {
+		font-size: 30pt;
+  		text-decoration-line: none;
+  		color: white;
+	}
+	
+	input,
+	button{
+		border: none;
+		background-color:transparent;
+		color: white;
+	}
+	
+	table {
+		left: 50px;
 	}
 	
 	

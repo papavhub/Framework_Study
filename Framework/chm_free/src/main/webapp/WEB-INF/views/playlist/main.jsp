@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="../resources/main.css" type="text/css"></link>
 </head>
 
-<body>
+<body class="whole">
 	<script type="text/javascript"
 		src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 
@@ -22,6 +22,7 @@
 	<div align=center>
 
 		<header>Playlist List</header>
+		
 
 		<div style="position: fixed; bottom: 0px; right: 0px;">
 			<a href="http://localhost:8080/chm_free/playlist/create" height="5" width="10" target="_blank"> 
@@ -30,26 +31,44 @@
 		</div>
 
 		<table>
-
+			<div align=center>
 			<c:forEach var="playlist" items="${playlistList}">
 				<tr>
-					<td><image height="80px" width="100px"
-							src="<c:out value="${playlist.playlistPhoto}"/>" /></td>
-					<td><c:out value="${playlist.playlistNumber}" /></td>
-					<td><c:out value="${playlist.playlistName}" /></td>
-					<td><c:out value="${playlist.playlistDescribe}" /></td>
-					<td><c:out value="${playlist.playlistLikes}" /></td>
-
-
 					<td>
-						<input type="button" id="deleteBtn" name="deleteBtn" value="삭제" onclick="deleteBtnFunc(${playlist.playlistNumber})">
-						<c:url value="/playlist/read?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 보기</a> 
-						<c:url value="/playlist/modify?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">정보 수정</a> 
-						<c:url value="/playlist/heart?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}">heart</a>
+						
+						<!-- heart -->
+						<c:url value="/playlist/heart?playlistNumber=${playlist.playlistNumber}" var="url"/>
+							<a href="${url}" height="5" width="10" target="_blank"> 
+								<img src="../resources/images/heart.png" class="heartBtn"/>
+							</a>
+
+						<c:out value="${playlist.playlistLikes}"></c:out>
+					
+						
+						<!-- playlistPhoto -->
+						<%-- <image height="80px" width="100px" src="<c:out value="${playlist.playlistPhoto}"/>" /> --%>
+						
+						<!-- read -->
+						<c:url value="/playlist/read?playlistNumber=${playlist.playlistNumber}" var="url"/>
+							<a href="${url}">${playlist.playlistName}</a>
+							
+													
+						<!-- update -->
+						<c:url value="/playlist/modify?playlistNumber=${playlist.playlistNumber}" var="url"/><a href="${url}" class="update">수정</a>
+						
+						<!-- delete -->
+						<input type="button" id="deleteBtn" name="deleteBtn" value="삭제" class="update" onclick="deleteBtnFunc(${playlist.playlistNumber})"> 
+						
+						<!-- tag -->
+						<c:out value="<h2>${playlist.playlistDescribe}</h2>" escapeXml="false"/> 
+						
+						
+						
 					</td>
 
 				</tr>
 			</c:forEach>
+			</div>
 		</table>
 
 
