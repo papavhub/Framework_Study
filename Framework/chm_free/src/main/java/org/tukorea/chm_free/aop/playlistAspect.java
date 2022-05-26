@@ -4,6 +4,7 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -36,9 +37,16 @@ public class playlistAspect {
 	
 	@After("execution(* heart(org.tukorea.chm_free.domain.Playlist_freeVO))")
 	public void afterHeart() {
-		System.out.println("[heart readList]");
+		System.out.println("[@After heart]");
 		System.out.println("하트 추가 완료! 하트는 계속 추가할 수 있습니다");
 		System.out.println("플레이스트가 좋았던 만큼 하트를 눌러 주세요!");
+	}
+	
+	@AfterThrowing(value="execution(* add(org.tukorea.chm_free.domain.PlaylistDetail_freeVO))", throwing="ex")
+	public void afterThrowingAddDetail(Throwable ex) {
+		System.out.println("[@AfterThrowing addDetail]");
+		System.out.println(ex.toString());
+		System.out.println("같은 링크를 2번 이상 입력하셨나요?");
 	}
 	
 }
