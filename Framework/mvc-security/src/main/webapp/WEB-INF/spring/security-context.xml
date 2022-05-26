@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+<!-- 
+    <bean id="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"></bean>
+-->   
+    <bean id="NoOpPasswordEncoder" class="org.springframework.security.crypto.password.NoOpPasswordEncoder"></bean>
+    
+    <security:http>
+        <security:intercept-url pattern="/login.jsp" access="permitAll()" />
+        <security:intercept-url pattern="/top.jsp" access="permitAll()" />
+        <security:intercept-url pattern="/admin/**" access="hasAuthority('ROLE_ADMIN')" />
+        <security:intercept-url pattern="/**" access="isAuthenticated()" />
+        <security:form-login
+            default-target-url="/top.jsp"
+            always-use-default-target="true"   
+	       	login-page="/login.jsp"  
+        	login-processing-url="/processLogin"
+        	authentication-failure-url="/login.jsp"
+        	username-parameter="paramLoginId"
+        	password-parameter="paramPassword" />  
+ 
+        <security:logout 
+        	logout-url="/logout" 
+        	logout-success-url="/top.jsp" />
+        <security:csrf disabled="true" />
+    </security:http>
+    
+
+     
+    <!-- 데이터베이스 인증 정보 관리 -->  
+    <security:authentication-manager>	
+        <security:authentication-provider>
+            <security:jdbc-user-service	   	
+            	data-source-ref="dataSource"
+            	users-by-username-query = "select id, passwd, true from student where id = ?"
+            	authorities-by-username-query = "select userid, rolename from user_role where userid = ?"           
+            />
+            <security:password-encoder ref="NoOpPasswordEncoder"/>
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+</beans>
