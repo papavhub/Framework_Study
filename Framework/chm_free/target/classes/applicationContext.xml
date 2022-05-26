@@ -48,12 +48,12 @@
 	
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 	
-	<context:component-scan base-package="org.tukorea.di.controller"/>
-	<context:component-scan base-package="org.tukorea.di.service"/>
-	<context:component-scan base-package="org.tukorea.di.persistence"/>
+
+	<context:component-scan base-package="org.tukorea.chm_free.aop"/>
+	<context:component-scan base-package="org.tukorea.chm_free.service"/>
+	<context:component-scan base-package="org.tukorea.chm_free.persistence"/>
 	
-		
-		
-		
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
 
 </beans>

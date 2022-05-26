@@ -12,7 +12,7 @@ import org.tukorea.chm_free.service.Playlist_freeService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"file:src/main/webapp/WEB-INF/spring/root-context.xml"})
-public class playlistTest1 {
+public class playlistTest {
 	
 	@Autowired
 	Playlist_freeService playlist_freeService;

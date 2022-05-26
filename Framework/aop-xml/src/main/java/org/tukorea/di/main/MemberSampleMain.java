@@ -15,10 +15,10 @@ public class MemberSampleMain {
 		System.out.println("Hello AOP_XML");
 		
 		// xml & annotation
-		// ctx = new GenericXmlApplicationContext("classpath:applicationContext.xml");
+		 ctx = new GenericXmlApplicationContext("classpath:applicationContext.xml");
 		
 		// java
-		ctx = new AnnotationConfigApplicationContext(JavaConfig.class);
+//		ctx = new AnnotationConfigApplicationContext(JavaConfig.class);
 		MemberService memberService = ctx.getBean(MemberService.class);
 		
 		StudentVO vo = new StudentVO();
