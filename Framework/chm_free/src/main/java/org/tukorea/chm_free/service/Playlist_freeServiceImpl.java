@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -15,6 +16,7 @@ import org.tukorea.chm_free.domain.Playlist_freeVO;
 import org.tukorea.chm_free.persistence.Playlist_freeDAO;
 
 @Service
+@Component
 public class Playlist_freeServiceImpl implements Playlist_freeService {
 	
 	@Autowired

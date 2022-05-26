@@ -8,12 +8,16 @@ import org.apache.ibatis.session.SqlSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import org.tukorea.chm_free.controller.PlaylistController;
 import org.tukorea.chm_free.domain.PlaylistDetail_freeVO;
 import org.tukorea.chm_free.domain.Playlist_freeVO;
 
 @Repository
+@Component
+@Service
 public class Playlist_freeDAOImpl implements Playlist_freeDAO {
 	
 	@Autowired
