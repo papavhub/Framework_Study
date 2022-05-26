@@ -4,6 +4,8 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -20,9 +22,11 @@ import org.tukorea.chm_free.service.Playlist_freeService;
 public class PlaylistController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(PlaylistController.class);
+	private static ApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationContext.xml");
 	
-	@Autowired(required=true)
-	private Playlist_freeService playlist_freeService;
+//	@Autowired(required=true)
+//	private Playlist_freeService playlist_freeService;
+	private Playlist_freeService playlist_freeService = ctx.getBean(Playlist_freeService.class);
 	
 	// read list
 	@RequestMapping(value= {"/list"}, method=RequestMethod.GET)
