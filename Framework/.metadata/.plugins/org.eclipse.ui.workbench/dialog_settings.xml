@@ -11,6 +11,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/hyeminchoi/Desktop/chm_free.zip"/>
 			<item value="/Users/hyeminchoi/Desktop/chm_batis.zip"/>
 			<item value="/Users/hyeminchoi/Desktop/chm_di.zip"/>
 			<item value="/Users/hyeminchoi/Desktop/Untitled.zip"/>
@@ -22,5 +23,7 @@
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.springframework.ide.eclipse.beans.ui.wizards.category"/>
 		</list>
+	</section>
+	<section name="FileSystemExportWizard">
 	</section>
 </section>

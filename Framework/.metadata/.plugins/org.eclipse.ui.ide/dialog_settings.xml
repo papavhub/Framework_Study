@@ -116,6 +116,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/hyeminchoi/Desktop/Framework_Study/Framework/db-sprinjdbc"/>
 			<item value="/Users/hyeminchoi/Desktop/Framework_Study/Framework/mvc-simple_sample"/>
 			<item value="/Users/hyeminchoi/Downloads/mvc-simple_sample"/>
 		</list>
