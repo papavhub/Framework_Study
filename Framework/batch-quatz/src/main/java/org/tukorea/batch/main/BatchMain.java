@@ -14,8 +14,8 @@ public class BatchMain {
 	
 	public static void main(String[] args) throws Exception {
 		context = new ClassPathXmlApplicationContext(
-//				new String[] {"resources/applicationContext.xml"}); // JAR
-				new String[] {"applicationContext.xml"});
+				new String[] {"resources/applicationContext.xml"}); // JAR
+//				new String[] {"applicationContext.xml"});
 
 		logger.info("BatchMain start");
 				
